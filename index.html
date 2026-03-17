@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Spanish Teacher</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="cursor"></div>
+<div class="cursor-dot"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+<div class="logo">
+  <a href="#">
+    <img src="logo.png" alt="Logo">
+  </a>
+</div>
+
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+     <li><a href="#projects">Certificates</a></li>
+    <li><a href="#services">My Services</a></li>
+    <li><a href="#experience">My Experience</a></li>
+    <li><a href="#contact">Contact Me</a></li>
+  </ul>
+
+  <button class="contact-btn"><a href="./resume.html">Resume</a></button>
+
+  <!-- Hamburger -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+</nav>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+  <div class="hero-content">
+    <span class="tag">Certified Spanish Teacher from Argentina</span>
+
+    <h1>
+      I'm <br />
+      <span class="dynamic-text">Patricia A.</span>
+    </h1>
+
+    <p>
+      I help students learn Spanish in a fun and practical way! Specializing in DELE and SIELE exam preparation, conversational Spanish, and Spanish for beginners and children. My lessons are personalized, dynamic, and full of communication from day one.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="https://linkedin.com/in/patry-aguero2386ck" target="_blank">
+        <button class="primary-btn">View My Profile</button>
+      </a>
+      <a href="https://preply.com/en/tutor/1041275?ts=17729810">
+        <button class="secondary-btn">Book Your First Class</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <div class="image-wrapper">
+      <img src="Black and White Simple Portfolio A4.png" alt="Patricia A. Spanish Teacher">
+      <div class="image-glow"></div>
+    </div>
+  </div>
+
+  <!-- Soft background shapes -->
+  <div class="hero-shapes">
+    <span class="shape shape1"></span>
+    <span class="shape shape2"></span>
+    <span class="shape shape3"></span>
+  </div>
+
+</section>
+
+
+
+<!-- CHATBOT -->
+<div class="chatbot-toggle" onclick="toggleChat()">
+💬
+</div>
+
+<div class="chatbot-container" id="chatbot">
+
+  <div class="chatbot-header">
+    Spanish Learning Assistant
+    <span onclick="toggleChat()">✖</span>
+  </div>
+
+  <div class="chatbot-body" id="chatBody">
+    <div class="bot-msg">
+      👋 Hi! I'm Patricia's assistant. I can help you with Spanish learning tips, class info, and exam preparation guidance. How can I help you today?
+    </div>
+  </div>
+
+  <div class="chatbot-footer">
+    <input type="text" id="userInput" placeholder="Type your Spanish question..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+</div>
+
+
+<!-- About -->
+<section class="about" id="about">
+  <div class="about-container">
+
+    <!-- Profile Image -->
+    <div class="about-image animate-on-scroll">
+      <img src="main.png" alt="Patricia A. Spanish Teacher">
+    </div>
+
+    <!-- Profile Info -->
+    <div class="about-info animate-on-scroll">
+      <h1 class="about-heading">About Me</h1>
+      <h2>I'm Patricia A.</h2>
+      <p class="roles">
+        <span>Certified Spanish Teacher (ELE)</span> | 
+        <span>DELE & SIELE Exam Prep Specialist</span> | 
+        <span>Spanish for Beginners & Children</span>
+      </p>
+      <p class="location">Argentina</p>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <a href="mailto:patriciaaguero@zohomail.com">📧 patriciaaguero@zohomail.com</a>
+        <a href="linkedin.com/in/patry-aguero2386ck" target="_blank">LinkedIn Profile ⬅️ Tap Here</a>
+      </div>
+
+      <!-- About Short Description -->
+      <p class="about-desc">
+        Passionate Spanish teacher from Argentina with over 6 years of experience.  
+        I specialize in personalized and dynamic lessons for students of all ages.  
+        From conversational Spanish to exam preparation (DELE & SIELE), I make learning fun, practical, and effective.
+      </p>
+
+      <!-- Experience Box -->
+      <div class="experience-box animate-on-scroll">
+        <h3>6+ Years of Experience</h3>
+        <p>Specialized in DELE & SIELE Exam Prep, Beginner Spanish, and Children’s Spanish Lessons.</p>
+      </div>
+    </div>
+
+    <!-- Bubbles Container -->
+    <div class="bubbles-container">
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- skills -->
+<section class="skills"> 
+  <div class="skills-container">
+
+    <h2 class="skills-heading">My Skills</h2>
+
+    <div class="skills-grid">
+
+      <!-- Conversational Spanish -->
+      <div class="skill-card" data-aos="fade-up">
+        <div class="skill-header">
+          <span>Conversational Spanish</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-fill="100%"></div>
+        </div>
+        <span class="skill-percent">100%</span>
+      </div>
+
+      <!-- Spanish for Beginners -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
+        <div class="skill-header">
+          <span>Spanish for Beginners</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-fill="95%"></div>
+        </div>
+        <span class="skill-percent">95%</span>
+      </div>
+
+      <!-- DELE & SIELE Exam Prep -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-header">
+          <span>DELE & SIELE Prep</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-fill="90%"></div>
+        </div>
+        <span class="skill-percent">90%</span>
+      </div>
+
+      <!-- Spanish for Children -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="skill-header">
+          <span>Spanish for Children</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-fill="85%"></div>
+        </div>
+        <span class="skill-percent">85%</span>
+      </div>
+
+      <!-- Business Spanish -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="skill-header">
+          <span>Business Spanish</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-fill="80%"></div>
+        </div>
+        <span class="skill-percent">80%</span>
+      </div>
+
+      <!-- DELE -->
+      <div class="skill-card" data-aos="fade-up">
+        <div class="skill-header">
+          <span>DELE</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-fill="90%"></div>
+        </div>
+        <span class="skill-percent">90%</span>
+      </div>
+
+      <!-- Spanish for Children -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
+        <div class="skill-header">
+          <span>Spanish for Children</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-fill="85%"></div>
+        </div>
+        <span class="skill-percent">85%</span>
+      </div>
+
+      <!-- European Spanish -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-header">
+          <span>European Spanish</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-fill="80%"></div>
+        </div>
+        <span class="skill-percent">80%</span>
+      </div>
+
+      <!-- Business Spanish -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="skill-header">
+          <span>Business Spanish</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-fill="75%"></div>
+        </div>
+        <span class="skill-percent">75%</span>
+      </div>
+
+      <!-- General Spanish -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="skill-header">
+          <span>General Spanish</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-fill="90%"></div>
+        </div>
+        <span class="skill-percent">90%</span>
+      </div>
+
+      <!-- Spanish as a Subject -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
+        <div class="skill-header">
+          <span>Spanish as a Subject</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-fill="85%"></div>
+        </div>
+        <span class="skill-percent">85%</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- certificates -->
+ <section class="certificates" id="projects">
+  <div class="container">
+    <h2 class="section-heading">Patricia's Certificates</h2>
+
+    <ul class="certificate-tree">
+      <!-- Certificate 1 -->
+      <li class="certificate-item">
+        <div class="certificate-image">
+          <img src="certificate1.png" alt="ELE Certificate">
+        </div>
+      </li>
+
+      <!-- Certificate 2 -->
+      <li class="certificate-item">
+        <div class="certificate-image">
+          <img src="certificate2.png" alt="DELE Certificate">
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- experience -->
+<section class="experience-stats" id="experience">
+  <div class="container">
+
+    <!-- LEFT SIDE: Counters -->
+    <div class="stats">
+      <div class="stat">
+        <span class="counter" data-target="120"></span>
+        <p>Students Taught</p>
+      </div>
+      <div class="stat">
+        <span class="counter" data-target="35">0</span>
+        <p>Courses Conducted</p>
+      </div>
+      <div class="stat">
+        <span class="counter" data-target="8">0</span>
+        <p>Years Experience</p>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE: Timeline -->
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-left">
+        <h3>Spanish Instructor</h3>
+        <span>Bright Future Language School</span>
+        <p>Teaching conversational and beginner Spanish to students of all ages. Focused on practical communication and engagement.</p>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left" data-aos-delay="100">
+        <h3>DELE & SIELE Exam Trainer</h3>
+        <span>Global Spanish Academy</span>
+        <p>Guided students to achieve high scores in DELE and SIELE exams through structured lessons, practice tests, and personalized coaching.</p>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+        <h3>Spanish for Children Instructor</h3>
+        <span>Sunny Kids Learning Center</span>
+        <p>Designed fun and interactive Spanish lessons for children, improving their vocabulary, listening, and speaking skills effectively.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- services -->
+<section class="services" id="services">
+  <div class="container">
+    <h2 class="section-heading">My Services</h2>
+
+    <div class="services-grid">
+      <!-- Service 1 -->
+      <div class="service-card" data-aos="fade-up">
+        <div class="service-icon">
+         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff14d4"><path d="M760-120q-39 0-70-22.5T647-200H440q-66 0-113-47t-47-113q0-66 47-113t113-47h80q33 0 56.5-23.5T600-600q0-33-23.5-56.5T520-680H313q-13 35-43.5 57.5T200-600q-50 0-85-35t-35-85q0-50 35-85t85-35q39 0 69.5 22.5T313-760h207q66 0 113 47t47 113q0 66-47 113t-113 47h-80q-33 0-56.5 23.5T360-360q0 33 23.5 56.5T440-280h207q13-35 43.5-57.5T760-360q50 0 85 35t35 85q0 50-35 85t-85 35ZM228.5-691.5Q240-703 240-720t-11.5-28.5Q217-760 200-760t-28.5 11.5Q160-737 160-720t11.5 28.5Q183-680 200-680t28.5-11.5Z"/></svg>
+        </div>
+        <h3>Conversational Spanish</h3>
+        <p>Learn practical Spanish for travel, daily life, and communication with ease and confidence.</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-icon">
+         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff14d4"><path d="M589.5-372.5Q602-385 602-402t-12.5-29.5Q577-444 560-444t-29.5 12.5Q518-419 518-402t12.5 29.5Q543-360 560-360t29.5-12.5ZM530-488h60q0-29 6-42.5t28-35.5q30-30 40-48.5t10-43.5q0-45-31.5-73.5T560-760q-41 0-71.5 23T446-676l54 22q9-25 24.5-37.5T560-704q24 0 39 13.5t15 36.5q0 14-8 26.5T578-596q-33 29-40.5 45.5T530-488ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
+        </div>
+        <h3>DELE & SIELE Exam Prep</h3>
+        <p>Structured lessons and practice tests to achieve top scores in DELE and SIELE exams.</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-icon">
+     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff14d4"><path d="M371.5-273Q323-306 300-360h360q-23 54-71.5 87T480-240q-60 0-108.5-33Zm-27-161.5Q330-449 330-470t14.5-35.5Q359-520 380-520t35.5 14.5Q430-491 430-470t-14.5 35.5Q401-420 380-420t-35.5-14.5Zm200 0Q530-449 530-470t14.5-35.5Q559-520 580-520t35.5 14.5Q630-491 630-470t-14.5 35.5Q601-420 580-420t-35.5-14.5ZM480-80q-75 0-140.5-28.5t-114-77q-48.5-48.5-77-114T120-440q0-32 5-62t16-59l80 14q-11 25-16 51.5t-5 55.5q0 117 81.5 198.5T480-160q117 0 198.5-81.5T760-440q0-16-2-31.5t-5-30.5q-81-9-150-48T485-651l70-41q32 37 72.5 63t88.5 39q-25-39-61.5-68.5T573-704l84-50q83 47 133 129.5T840-440q0 75-28.5 140.5t-77 114q-48.5 48.5-114 77T480-80ZM200-615l413-155q-32-26-70-39.5T463-823q-95 0-169.5 57.5T200-615Zm-64 110q-7-20-11.5-41t-4.5-43q0-91 51-163t129-112q-2-4-2.5-7.5t-.5-8.5q0-17 11.5-28.5T337-920q14 0 24 8t14 20q22-5 43.5-8t44.5-3q67 0 127.5 26T697-802l122-46 28 75-711 268Zm271-188Z"/></svg>
+        </div>
+        <h3>Spanish for Children</h3>
+        <p>Fun, interactive lessons designed to teach children Spanish vocabulary, reading, and speaking skills.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- reviews -->
+ <section class="testimonials-unique" id="testimonials">
+  <div class="container">
+    <h2 class="section-heading" data-aos="fade-up">What My Students Say</h2>
+
+    <div class="testimonials-floating">
+
+      <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="0">
+        <div class="circle">
+          <p>“Dynamic and engaging classes!”</p>
+        </div>
+        <span class="student-name">Tania</span>
+        <span class="review-date">Feb 5, 2026</span>
+      </div>
+
+      <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="circle">
+          <p>“Classes with Patricia are always very kind. She is an incredible professional.”</p>
+        </div>
+        <span class="student-name">Carlos Eduardo</span>
+        <span class="review-date">Jan 12, 2026</span>
+      </div>
+
+      <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="circle">
+          <p>“Patricia is an excellent teacher. Her method was exactly what I was looking for. I recommend her without a doubt!”</p>
+        </div>
+        <span class="student-name">Carlos Eduardo</span>
+        <span class="review-date">Dec 26, 2025</span>
+      </div>
+
+      <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="circle">
+          <p>“The lessons are very fun 😊”</p>
+        </div>
+        <span class="student-name">MELDA</span>
+        <span class="review-date">Dec 26, 2025</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- contact -->
+ <!-- GET IN TOUCH SECTION -->
+<section class="get-in-touch">
+  <div class="contact-container">
+
+    <h2 class="contact-heading">Get in Touch</h2>
+    <p class="contact-text">
+      I'm always open to discuss your project or collaboration. Connect with me through social media or send me a message!
+    </p>
+
+    <div class="contact-links">
+      <a href="linkedin.com/in/patry-aguero2386ck" target="_blank" rel="noopener noreferrer" class="contact-icon linkedin">
+        <img src="email.jpg" alt="LinkedIn Profile">
+      </a>
+      <a href="mailto:patriciaaguero@zohomail.com" class="contact-icon email">
+        <img src="google.jpg" alt="Send Email">
+      </a>
+    </div>
+
+    <a href="mailto:patriciaaguero@zohomail.com" target="_blank" rel="noopener noreferrer" class="contact-btn-main">Contact Me</a>
+
+  </div>
+</section>
+
+
+<!-- footer -->
+<footer class="footer" id="contact">
+  <div class="footer-container">
+
+    <!-- Left Side: Logo & About -->
+    <div class="footer-left">
+      <a href="#" class="footer-logo">
+        <img src="logo.png" alt="Logo">
+      </a>
+      <p>Certified Spanish as a Foreign Language (ELE) Teacher | Specializing in DELE & SIELE Exams</p>
+    </div>
+
+    <!-- Center: Quick Links -->
+    <div class="footer-center">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Right Side: Contact -->
+    <div class="footer-right">
+      <h3>Contact</h3>
+      <p>Email: patriciaaguero@zohomail.com</p>
+      <p>Location: Argentina</p>
+      <p>Languages: Spanish (Native), English (Intermediate B1)</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Patricia A. | All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
